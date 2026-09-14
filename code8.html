@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-tint":"#006c4a","on-error":"#ffffff","on-surface":"#0b1c30","on-secondary-fixed-variant":"#3f465c","outline-variant":"#bccac0","surface-variant":"#d3e4fe","background":"#f8f9ff","primary-fixed-dim":"#68dba9","secondary-fixed-dim":"#bec6e0","secondary-container":"#dae2fd","tertiary-container":"#316bf3","error-container":"#ffdad6","inverse-surface":"#213145","tertiary":"#0051d5","on-tertiary-container":"#fefcff","surface-container-high":"#dce9ff","secondary-fixed":"#dae2fd","on-background":"#0b1c30","surface-container-lowest":"#ffffff","primary-container":"#00855d","tertiary-fixed":"#dbe1ff","surface":"#f8f9ff","tertiary-fixed-dim":"#b4c5ff","on-tertiary-fixed":"#00174b","surface-dim":"#cbdbf5","primary":"#006948","inverse-on-surface":"#eaf1ff","surface-container-low":"#eff4ff","on-tertiary":"#ffffff","on-error-container":"#93000a","on-secondary-container":"#5c647a","error":"#ba1a1a","primary-fixed":"#85f8c4","secondary":"#565e74","on-primary-container":"#f5fff7","on-tertiary-fixed-variant":"#003ea8","surface-bright":"#f8f9ff","on-secondary-fixed":"#131b2e","on-secondary":"#ffffff","on-primary-fixed-variant":"#005137","surface-container":"#e5eeff","outline":"#6d7a72","on-surface-variant":"#3d4a42","on-primary-fixed":"#002114","inverse-primary":"#68dba9","on-primary":"#ffffff","surface-container-highest":"#d3e4fe"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin-mobile":"1rem","space-md":"1rem","space-xs":"0.25rem","space-lg":"1.5rem","margin-desktop":"3rem","space-sm":"0.5rem","gutter-lg":"2rem","gutter-sm":"1rem","margin":"1.5rem","space-xl":"2.5rem","gutter":"1.5rem"},"fontFamily":{"body-sm":["Hanken Grotesk"],"headline-lg-mobile":["Hanken Grotesk"],"headline-xl-mobile":["Hanken Grotesk"],"headline-md":["Hanken Grotesk"],"body-md":["Hanken Grotesk"],"label-code-sm":["JetBrains Mono"],"label-numeric-lg":["JetBrains Mono"],"label-numeric-md":["JetBrains Mono"],"headline-xl":["Hanken Grotesk"],"body-lg":["Hanken Grotesk"],"headline-lg":["Hanken Grotesk"]},"fontSize":{"body-sm":["12px",{"lineHeight":"16px","fontWeight":"500"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-xl-mobile":["30px",{"lineHeight":"38px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-md":["22px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-code-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.02em","fontWeight":"500"}],"label-numeric-lg":["20px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-numeric-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"500"}],"headline-xl":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.015em","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md shrink-0"><a class="flex items-center gap-space-sm" data-path="home" href="#"><img alt="USDTX Logo" class="h-9 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VeMHlyNMj7vcTIkLSZMyVTM_yy7dmAbuzJX6kbtmy9nXju-oZ2uKZZooHsR_qcuMTmC3t3weKS1GrbXs_8N8nAWKGKL29SkMEmOxJt0gAebHx6RLXS5G_CvbL0FbMtsCfTMaJPChJhTfwuNy0fP9HwuYiXyOPDjKKEnQC-gHVW8upPdukAyaQJtJJtYR3a9tWBtDcNtaygt_P3dx7FrdgityKZb9TmF-NVkbuZ_7qen9Q9kkNpzV1GWlw"/></a></div><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-surface-container-high text-on-surface font-semibold"><a aria-current="page" class="px-space-md py-space-sm rounded-lg transition-colors bg-surface-container-high text-on-surface font-semibold" data-path="home" href="#">Home</a><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container hover:text-on-surface transition-colors" data-path="buy-usdt" href="#">Buy USDT</a><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container hover:text-on-surface transition-colors" data-path="sell-usdt" href="#">Sell USDT</a><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container hover:text-on-surface transition-colors" data-path="how-it-works" href="#">How It Works</a><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container hover:text-on-surface transition-colors" data-path="live-rates" href="#">Rates</a><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container hover:text-on-surface transition-colors" data-path="faq" href="#">FAQ</a><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container hover:text-on-surface transition-colors" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-md shrink-0"><a class="inline-flex items-center px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="client-login" href="#">Login</a><a class="inline-flex items-center justify-center px-space-lg py-space-sm rounded-lg bg-primary text-on-primary font-body-md text-body-md font-semibold hover:bg-primary-container transition-all shadow-[0_1px_3px_0_rgba(15,23,42,0.04)]" data-path="submit-request" href="#">Submit Request</a></div></div></header><main class="w-full pt-20 bg-background flex-1"><div class="flex flex-col w-full">
+<!-- Hero Section -->
+<div class="relative w-full overflow-hidden pb-16 pt-12">
+<div class="max-w-7xl mx-auto px-margin relative z-10">
+<div class="text-center max-w-3xl mx-auto flex flex-col items-center mb-space-xl">
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight font-bold mb-space-md">
+          Buy &amp; Sell USDT with INR
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-space-xl max-w-2xl">
+          Simple, transparent and professional USDT buying and selling service.
+        </p>
+<div class="flex flex-wrap items-center justify-center gap-space-md">
+<a class="inline-flex items-center justify-center gap-space-xs px-space-xl py-3.5 rounded-xl bg-primary text-on-primary font-body-md text-body-md font-semibold hover:bg-primary-container transition-all shadow-md" data-path="buy-usdt" href="#">
+<span>Buy USDT</span>
+<span class="material-symbols-outlined text-body-lg">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center gap-space-xs px-space-xl py-3.5 rounded-xl bg-surface-container-lowest border border-outline-variant text-on-surface font-body-md text-body-md font-semibold hover:bg-surface-container-low transition-all shadow-sm" data-path="sell-usdt" href="#">
+<span>Sell USDT</span>
+<span class="material-symbols-outlined text-body-lg text-secondary">currency_exchange</span>
+</a>
+</div>
+</div>
+<!-- Rate Section -->
+<div class="max-w-4xl mx-auto bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm mb-space-xl border border-surface-container">
+<div class="text-center pb-space-md">
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight font-bold">Our Current Service Rates</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="bg-surface-container-low rounded-xl p-space-lg flex flex-col items-center justify-center text-center border border-surface-container-high/60">
+<span class="font-body-md text-body-md text-on-surface-variant font-medium mb-space-xs">Buy USDT</span>
+<div class="flex items-baseline gap-space-xs mb-space-xs">
+<span class="font-headline-lg text-headline-lg text-primary font-bold">1 USDT = ₹89.40</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-lg flex flex-col items-center justify-center text-center border border-surface-container-high/60">
+<span class="font-body-md text-body-md text-on-surface-variant font-medium mb-space-xs">Sell USDT</span>
+<div class="flex items-baseline gap-space-xs mb-space-xs">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">1 USDT = ₹88.75</span>
+</div>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-center mt-space-md">
+          Rates may change. The final rate applicable to a request will be confirmed by our team.
+        </p>
+</div>
+<!-- Calculator Section -->
+<div class="max-w-xl mx-auto bg-surface-container-lowest rounded-2xl p-space-xl shadow-md border border-surface-container flex flex-col gap-space-md">
+<div class="grid grid-cols-2 p-1.5 bg-surface-container-low rounded-xl">
+<button class="py-space-sm px-space-md rounded-lg font-body-md text-body-md font-semibold text-on-primary bg-primary shadow-sm transition-all text-center" id="btn-tab-buy" onclick="switchCalcMode('buy')">
+            Buy USDT
+          </button>
+<button class="py-space-sm px-space-md rounded-lg font-body-md text-body-md font-medium text-on-surface-variant hover:text-on-surface transition-all text-center" id="btn-tab-sell" onclick="switchCalcMode('sell')">
+            Sell USDT
+          </button>
+</div>
+<div class="flex flex-col gap-space-md">
+<div class="bg-surface-container-low p-space-md rounded-xl space-y-space-xs">
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span id="label-pay-mode">I want to pay (INR)</span>
+</div>
+<div class="flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-xs flex-1">
+<span class="font-headline-md text-headline-md text-on-surface font-bold" id="calc-currency-symbol">₹</span>
+<input class="w-full bg-transparent font-label-numeric-lg text-label-numeric-lg text-on-surface font-bold focus:outline-none placeholder:text-outline-variant" id="calc-input" oninput="recalculateRate()" placeholder="50000" type="number" value="50000"/>
+</div>
+<div class="flex items-center gap-1.5 px-space-md py-space-xs bg-surface-container-lowest rounded-lg shadow-sm font-label-code-sm text-label-code-sm font-bold text-on-surface">
+<span id="calc-currency-code">INR</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-center -my-1">
+<div class="w-8 h-8 rounded-full bg-surface-container-lowest border border-surface-container shadow-sm flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-body-md">swap_vert</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl space-y-space-xs">
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span id="label-receive-mode">Estimated Receive (USDT)</span>
+</div>
+<div class="flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-xs flex-1">
+<span class="font-headline-md text-headline-md text-primary font-bold" id="calc-receive-symbol">₮</span>
+<span class="font-label-numeric-lg text-label-numeric-lg text-primary font-bold" id="calc-receive-amount">559.28</span>
+</div>
+<div class="flex items-center gap-1.5 px-space-md py-space-xs bg-surface-container-lowest rounded-lg shadow-sm font-label-code-sm text-label-code-sm font-bold text-on-surface">
+<span id="calc-receive-code">USDT</span>
+</div>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container space-y-space-xs">
+<div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span>Service Rate</span>
+<span class="font-label-code-sm text-label-code-sm font-semibold text-on-surface" id="breakdown-rate">1 USDT = ₹89.40</span>
+</div>
+</div>
+<a class="w-full inline-flex items-center justify-center gap-space-xs py-space-md rounded-xl bg-primary text-on-primary font-body-md text-body-md font-semibold hover:bg-primary-container transition-all shadow-sm" data-path="submit-request" href="#" id="btn-calc-submit">
+<span>Start Request</span>
+<span class="material-symbols-outlined text-body-lg">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- How It Works (Exactly 4 simple steps) -->
+<section class="w-full bg-surface-container-low py-space-xl">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="text-center mb-space-xl">
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight mb-space-xs">
+          How It Works
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mx-auto">
+          A straightforward request process with clear steps.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm border border-surface-container flex flex-col justify-between">
+<div class="space-y-space-md">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-primary font-label-numeric-lg text-label-numeric-lg font-bold">
+              01
+            </div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">
+              Choose Buy or Sell
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Select whether you want to buy or sell USDT.
+            </p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm border border-surface-container flex flex-col justify-between">
+<div class="space-y-space-md">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-primary font-label-numeric-lg text-label-numeric-lg font-bold">
+              02
+            </div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">
+              Submit Your Request
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Fill in your contact and transaction details.
+            </p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm border border-surface-container flex flex-col justify-between">
+<div class="space-y-space-md">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-primary font-label-numeric-lg text-label-numeric-lg font-bold">
+              03
+            </div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">
+              We Review the Details
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Our team reviews your request and sends payment/transfer instructions.
+            </p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm border border-surface-container flex flex-col justify-between">
+<div class="space-y-space-md">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-primary font-label-numeric-lg text-label-numeric-lg font-bold">
+              04
+            </div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">
+              Transaction Is Completed
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Receive your USDT or INR payout with full confirmation.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose USDTX (4 Simple Cards) -->
+<section class="w-full py-space-xl">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="text-center max-w-2xl mx-auto mb-space-xl">
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight mb-space-xs">
+          Why Choose USDTX
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Reliable, clear, and direct service designed around your convenience.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<div class="bg-surface-container-lowest p-space-xl rounded-2xl shadow-sm border border-surface-container flex flex-col sm:flex-row gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-headline-md">check_circle</span>
+</div>
+<div class="space-y-space-xs">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">
+              Simple Process
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Easy request process with clear straightforward steps.
+            </p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-xl rounded-2xl shadow-sm border border-surface-container flex flex-col sm:flex-row gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-headline-md">monitoring</span>
+</div>
+<div class="space-y-space-xs">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">
+              Transparent Rates
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              See our current buy and sell service rates before submitting.
+            </p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-xl rounded-2xl shadow-sm border border-surface-container flex flex-col sm:flex-row gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-headline-md">support_agent</span>
+</div>
+<div class="space-y-space-xs">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">
+              Human Support
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Our team is available to guide you through your request.
+            </p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-xl rounded-2xl shadow-sm border border-surface-container flex flex-col sm:flex-row gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-headline-md">receipt_long</span>
+</div>
+<div class="space-y-space-xs">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">
+              Clear Updates
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Track the status of your request from submission to completion.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Preview -->
+<section class="w-full bg-surface-container-low py-space-xl">
+<div class="max-w-4xl mx-auto px-margin">
+<div class="text-center mb-space-xl space-y-space-xs">
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">
+          Frequently Asked Questions
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto">
+          Helpful answers to common questions about buying and selling USDT.
+        </p>
+</div>
+<div class="space-y-space-sm mb-space-xl">
+<div class="bg-surface-container-lowest rounded-xl shadow-sm border border-surface-container overflow-hidden">
+<button class="w-full px-space-lg py-space-md flex items-center justify-between text-left hover:bg-surface-container-high/40 transition-colors" onclick="toggleFaq('faq-1')">
+<span class="font-headline-md text-headline-md text-on-surface font-semibold text-base sm:text-lg">
+              What is USDTX?
+            </span>
+<span class="material-symbols-outlined text-primary text-body-lg transition-transform duration-200" id="icon-faq-1">expand_more</span>
+</button>
+<div class="px-space-lg pb-space-md text-on-surface-variant font-body-md text-body-md leading-relaxed hidden" id="content-faq-1">
+            USDTX is a simple, transparent and professional buying and selling service designed to assist clients with converting USDT and INR with clear, upfront communication.
+          </div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl shadow-sm border border-surface-container overflow-hidden">
+<button class="w-full px-space-lg py-space-md flex items-center justify-between text-left hover:bg-surface-container-high/40 transition-colors" onclick="toggleFaq('faq-2')">
+<span class="font-headline-md text-headline-md text-on-surface font-semibold text-base sm:text-lg">
+              What rate will I receive?
+            </span>
+<span class="material-symbols-outlined text-primary text-body-lg transition-transform duration-200" id="icon-faq-2">expand_more</span>
+</button>
+<div class="px-space-lg pb-space-md text-on-surface-variant font-body-md text-body-md leading-relaxed hidden" id="content-faq-2">
+            Rates are shown transparently before you submit. Rates may fluctuate with general market conditions, and the final rate applicable to your request will be explicitly confirmed by our team during review.
+          </div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl shadow-sm border border-surface-container overflow-hidden">
+<button class="w-full px-space-lg py-space-md flex items-center justify-between text-left hover:bg-surface-container-high/40 transition-colors" onclick="toggleFaq('faq-3')">
+<span class="font-headline-md text-headline-md text-on-surface font-semibold text-base sm:text-lg">
+              Which networks are supported?
+            </span>
+<span class="material-symbols-outlined text-primary text-body-lg transition-transform duration-200" id="icon-faq-3">expand_more</span>
+</button>
+<div class="px-space-lg pb-space-md text-on-surface-variant font-body-md text-body-md leading-relaxed hidden" id="content-faq-3">
+            We support standard USDT networks including TRC20, ERC20, and BEP20. You can select your preferred network during request submission.
+          </div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl shadow-sm border border-surface-container overflow-hidden">
+<button class="w-full px-space-lg py-space-md flex items-center justify-between text-left hover:bg-surface-container-high/40 transition-colors" onclick="toggleFaq('faq-4')">
+<span class="font-headline-md text-headline-md text-on-surface font-semibold text-base sm:text-lg">
+              How do I receive my funds?
+            </span>
+<span class="material-symbols-outlined text-primary text-body-lg transition-transform duration-200" id="icon-faq-4">expand_more</span>
+</button>
+<div class="px-space-lg pb-space-md text-on-surface-variant font-body-md text-body-md leading-relaxed hidden" id="content-faq-4">
+            For Buy requests, USDT is sent directly to your submitted wallet address. For Sell requests, INR is transferred directly to your verified bank account (IMPS/NEFT/RTGS).
+          </div>
+</div>
+</div>
+<div class="flex justify-center">
+<a class="inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded-xl bg-surface-container-lowest border border-outline-variant/50 text-on-surface font-body-md text-body-md font-semibold hover:bg-surface-container transition-all shadow-sm" data-path="faq" href="#">
+<span>View All FAQs</span>
+<span class="material-symbols-outlined text-body-lg">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Need Assistance / Contact CTA -->
+<section class="w-full py-space-xl">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="bg-surface-container-lowest rounded-3xl p-space-xl shadow-md border-l-8 border-l-primary border border-surface-container flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-lg">
+<div class="space-y-space-sm max-w-2xl">
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">
+            Need help with your request?
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Our team is available to assist you with any questions regarding buying or selling USDT.
+          </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 pt-space-xs text-body-sm font-body-sm text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-base">call</span>
+<span>Phone: [Phone Number]</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-base">mail</span>
+<span>Email: [Email Address]</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-base">chat</span>
+<span>WhatsApp: [WhatsApp Number]</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-base">schedule</span>
+<span>Business Hours: [Business Hours]</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-space-md shrink-0 w-full lg:w-auto">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs px-space-lg py-3.5 rounded-xl bg-primary text-on-primary font-body-md text-body-md font-semibold hover:bg-primary-container transition-all shadow-sm" href="https://wa.me/919876543210" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-body-lg">chat</span>
+<span>WhatsApp</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs px-space-lg py-3.5 rounded-xl bg-surface-container text-on-surface font-body-md text-body-md font-semibold hover:bg-surface-container-high transition-all" data-path="contact" href="#">
+<span class="material-symbols-outlined text-body-lg">call</span>
+<span>Contact Us</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  let currentCalcMode = 'buy';
+  const BUY_RATE = 89.40;
+  const SELL_RATE = 88.75;
+
+  function switchCalcMode(mode) {
+    currentCalcMode = mode;
+    const btnBuy = document.getElementById('btn-tab-buy');
+    const btnSell = document.getElementById('btn-tab-sell');
+    const labelPay = document.getElementById('label-pay-mode');
+    const labelRec = document.getElementById('label-receive-mode');
+    const currencySym = document.getElementById('calc-currency-symbol');
+    const currencyCode = document.getElementById('calc-currency-code');
+    const recSym = document.getElementById('calc-receive-symbol');
+    const recCode = document.getElementById('calc-receive-code');
+    const bRate = document.getElementById('breakdown-rate');
+    const calcInput = document.getElementById('calc-input');
+    const btnSubmit = document.getElementById('btn-calc-submit');
+
+    if (mode === 'buy') {
+      btnBuy.className = 'py-space-sm px-space-md rounded-lg font-body-md text-body-md font-semibold text-on-primary bg-primary shadow-sm transition-all text-center';
+      btnSell.className = 'py-space-sm px-space-md rounded-lg font-body-md text-body-md font-medium text-on-surface-variant hover:text-on-surface transition-all text-center';
+      labelPay.textContent = 'I want to pay (INR)';
+      labelRec.textContent = 'Estimated Receive (USDT)';
+      currencySym.textContent = '₹';
+      currencyCode.textContent = 'INR';
+      recSym.textContent = '₮';
+      recCode.textContent = 'USDT';
+      bRate.textContent = '1 USDT = ₹' + BUY_RATE.toFixed(2);
+      calcInput.value = '50000';
+      btnSubmit.setAttribute('data-path', 'buy-usdt');
+    } else {
+      btnSell.className = 'py-space-sm px-space-md rounded-lg font-body-md text-body-md font-semibold text-on-primary bg-primary shadow-sm transition-all text-center';
+      btnBuy.className = 'py-space-sm px-space-md rounded-lg font-body-md text-body-md font-medium text-on-surface-variant hover:text-on-surface transition-all text-center';
+      labelPay.textContent = 'I want to sell (USDT)';
+      labelRec.textContent = 'Estimated Payout (INR)';
+      currencySym.textContent = '₮';
+      currencyCode.textContent = 'USDT';
+      recSym.textContent = '₹';
+      recCode.textContent = 'INR';
+      bRate.textContent = '1 USDT = ₹' + SELL_RATE.toFixed(2);
+      calcInput.value = '500';
+      btnSubmit.setAttribute('data-path', 'sell-usdt');
+    }
+    recalculateRate();
+  }
+
+  function recalculateRate() {
+    const input = document.getElementById('calc-input');
+    const val = parseFloat(input.value) || 0;
+    const recAmount = document.getElementById('calc-receive-amount');
+
+    if (currentCalcMode === 'buy') {
+      const usdt = val > 0 ? (val / BUY_RATE).toFixed(2) : '0.00';
+      recAmount.textContent = usdt;
+    } else {
+      const inr = val > 0 ? (val * SELL_RATE).toLocaleString('en-IN', { maximumFractionDigits: 2, minimumFractionDigits: 2 }) : '0.00';
+      recAmount.textContent = inr;
+    }
+  }
+
+  function toggleFaq(id) {
+    const content = document.getElementById('content-' + id);
+    const icon = document.getElementById('icon-' + id);
+    if (content.classList.contains('hidden')) {
+      content.classList.remove('hidden');
+      icon.classList.add('rotate-180');
+    } else {
+      content.classList.add('hidden');
+      icon.classList.remove('rotate-180');
+    }
+  }
+
+  recalculateRate();
+</script></main><footer class="w-full bg-surface-container-lowest border-t border-surface-container shadow-[0_-1px_8px_rgba(0,0,0,0.03)]"><div class="max-w-7xl mx-auto px-margin py-space-xl">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter-lg pb-space-xl">
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm">
+<img alt="USDTX Logo" class="h-9 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VeMHlyNMj7vcTIkLSZMyVTM_yy7dmAbuzJX6kbtmy9nXju-oZ2uKZZooHsR_qcuMTmC3t3weKS1GrbXs_8N8nAWKGKL29SkMEmOxJt0gAebHx6RLXS5G_CvbL0FbMtsCfTMaJPChJhTfwuNy0fP9HwuYiXyOPDjKKEnQC-gHVW8upPdukAyaQJtJJtYR3a9tWBtDcNtaygt_P3dx7FrdgityKZb9TmF-NVkbuZ_7qen9Q9kkNpzV1GWlw"/>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed max-w-sm">
+        USDTX is a simple and transparent USDT buying and selling service for INR.
+      </p>
+</div>
+<div class="lg:col-span-4 flex flex-col gap-space-sm">
+<h4 class="font-body-sm text-body-sm text-on-surface font-semibold uppercase tracking-wider mb-space-xs">Quick Navigation</h4>
+<nav class="flex flex-wrap gap-x-space-md gap-y-space-xs">
+<a aria-current="page" class="transition-colors text-primary font-semibold" data-path="home" href="#">Home</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="buy-usdt" href="#">Buy USDT</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="sell-usdt" href="#">Sell USDT</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="how-it-works" href="#">How It Works</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="live-rates" href="#">Rates</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="faq" href="#">FAQ</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="#">Contact</a>
+</nav>
+</div>
+<div class="lg:col-span-3 flex flex-col gap-space-sm">
+<h4 class="font-body-sm text-body-sm text-on-surface font-semibold uppercase tracking-wider mb-space-xs">Legal</h4>
+<nav class="flex flex-col gap-space-xs">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="terms-of-service" href="#">Terms</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="privacy-policy" href="#">Privacy Policy</a>
+</nav>
+</div>
+</div>
+<div class="pt-space-lg border-t border-surface-container flex flex-col gap-space-md">
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+      Rates may change and the final rate applicable to a request will be confirmed by our team.
+    </p>
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span>© 2026 USDTX. All rights reserved.</span>
+</div>
+</div>
+</div></footer>
+</body></html>
